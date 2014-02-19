@@ -1,0 +1,33 @@
+doctype html
+html(class="no-js")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="description", content="")
+    meta(name="viewport", content="width=1024")
+
+    title NextGxDx | Genetic Testing. Simplified.
+    script(src='//use.typekit.net/fhm4dtq.js')
+    script.
+      try { Typekit.load(); }
+      catch (e) { }
+
+    link(rel='stylesheet', href='/styles/app.css')
+  body
+    header.navbar
+      .container
+        a(href='/', class='logo', title='NextGxDx')
+          span.divider-vertical
+          span NextGxDx
+
+      .subnav
+        .container
+          ul
+            li
+              a(ui-sref='overview') Overview
+
+    .main(ui-view="")
+    
+    script(src="/lib/angular/angular.js")
+    script(src="/lib/angular/angular-ui-router.js")
+    script(src="/app.js")
